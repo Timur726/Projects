@@ -27,3 +27,14 @@ There are 8 buttons and a search bar.
 "Sorting By Date/Time / Sorting By Priority" - Toggle to sort items by date/time or by priority.
 
 You can check off items as "Complete" on the left of each item.
+_____
+
+PROJECT 2 - Elevator Scheduler
+
+The "Elevator Scheduler" is a kernel module that simulates an elevator. It is controlled by calls from the operating system (which must be manually inserted for the program to work) which add random amounts of people to different floors. It is written entirely in C and should be run on a Linux machine.
+
+The elevator seeks to drop everyone off to the correct floor in the shortest possible time. There are 10 floors, each containing a linked list of people. The people on the elevator are also stored as a linked list. There are three types of people: one weighing 150 pounds, another weighing 170 pounds, and another weighing 225 pounds. These people are added to the floors through a system call. Each person has a starting floor, a destination floor, and a weight.
+
+The constraints are as follows. The elevator can hold a maximum of 1000 pounds. Each up or down movement takes one second. Stopping on a floor to load and unload takes two seconds. The people on each floor are served first in, first out.
+
+The elevator uses SCAN scheduling. This means that the elevator moves from floor 1 to 10, servicing requests along the way. Then, it goes from floor 10 to 1, servicing requests along the way. If it is going up, it will only pick up people who are going up, and vice versa. It will stop picking people up on that floor when (1) the elevator cannot hold the next person's weight, (2) the next person is going in the other direction, or (3) the floor is empty. The elevator will turn around if there is no one left to drop off and all the floors in its current direction are empty.
