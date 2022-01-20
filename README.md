@@ -40,3 +40,44 @@ The constraints are as follows. The elevator can hold a maximum of 1000 pounds. 
 The elevator uses SCAN scheduling. This means that the elevator moves from floor 1 to 10, servicing requests along the way. Then, it goes from floor 10 to 1, servicing requests along the way. If it is going up, it will only pick up people who are going up, and vice versa. It will stop picking people up on that floor when (1) the elevator cannot hold the next person's weight, (2) the next person is going in the other direction, or (3) the floor is empty. The elevator will turn around if there is no one left to drop off and all the floors in its current direction are empty. When all people are serviced, the elevator stops in the middle (floor 5 if in the bottom half; floor 6 if in the top half).
 
 Four files are provided. sys_call.c contains the necessary system calls. sysCallMakefile is used during kernel compilation. elevator.c is the main program with the elevator scheduler. elevatorMakefile is used when runnning the elevator to create the .ko file that is later loaded.
+_____
+
+PROJECT 3 - FAT32 Image Reader and Modifier
+
+This is a program that reads and writes to a FAT32 disk image. The program includes a built-in shell with 16 commands that can be used to read and interact with the disk image.
+
+When running the program, make sure the path to the FAT32 disk image is provided as the first and only argument. You can use the following commands. Capital letters indicate arguments.
+
+exit -- Ends program.
+
+info -- Prints info about disk image.
+
+size FILENAME -- Prints size of filename.
+
+ls DIRNAME -- Prints the files in the given directory.
+
+cd DIRNAME -- Changes the current directory to the given directory.
+
+creat FILENAME -- Creates a file with the given name.
+
+mkdir DIRNAME -- Creates a directory with the given name.
+
+mv FROM TO -- Moes a file or directory, or changes its name.
+
+open FILENAME MODE -- Opens a file with the given name to one of the following modes: r (read-only), w (write-only), rw (read and write), wr (write and read).
+
+close FILENAME -- Closes the file with the given name.
+
+showopen -- Prints the files that are currently open.
+
+lseek FILENAME OFFSET -- Sets the offset of the given file for reading and writing.
+
+read FILENAME SIZE -- Reads the given number of bytes from the current offset of the given file.
+
+write FILENAME SIZE "STRING" -- Writes the given string up to the given number of bytes to the given file.
+
+rm FILENAME -- Removes the given file.
+
+cp FILENAME TO -- Copies the given file either to a new file or to the given directory.
+
+rmdir DIRNAME -- Removes the given directory.
