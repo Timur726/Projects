@@ -44,7 +44,7 @@ _____
 
 PROJECT 3 - FAT32 Image Reader and Modifier
 
-This is a program that reads and writes to a FAT32 disk image. The program includes a built-in shell with 16 commands that can be used to read and interact with the disk image.
+This is a program that reads and writes to a FAT32 disk image. FAT32 is a file system made by Microsoft that is often used on floppy disks and flash drives. The program includes a built-in shell with 17 commands that can be used to read and interact with the disk image. It is written entirely in C.
 
 When running the program, make sure the path to the FAT32 disk image is provided as the first and only argument. You can use the following commands. Capital letters indicate arguments.
 
