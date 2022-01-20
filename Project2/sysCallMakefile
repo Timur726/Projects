@@ -1,0 +1,9 @@
+obj-y := sys_call.o
+
+PWD := $(shell pwd)
+KDIR := /lib/modules/`uname -r`/build
+
+default:
+        $(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+clean:
+        rm -f *.o *.ko *.mod.* Module.* modules.*
