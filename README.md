@@ -54,7 +54,7 @@ info -- Prints info about disk image.
 
 size FILENAME -- Prints size of filename.
 
-ls DIRNAME -- Prints the files in the given directory.
+ls DIRNAME -- Prints the files in the given directory. First argument is optional.
 
 cd DIRNAME -- Changes the current directory to the given directory.
 
