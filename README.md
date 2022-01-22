@@ -10,21 +10,21 @@ To run the app, download all of the provided files and open ItemManager.sln in V
 
 There are 8 buttons and a search bar.
 
-"Add Task" - Add a task with name, description, deadline, and priority level.
+"Add Task" -- Add a task with name, description, deadline, and priority level.
 
-"Add Appointment" - Add an appointment with name, description, start date, end date, list of attendees, and priority level.
+"Add Appointment" -- Add an appointment with name, description, start date, end date, list of attendees, and priority level.
 
-"Edit Item" - Edit data for an item. Must select item first.
+"Edit Item" -- Edit data for an item. Must select item first.
 
-"Delete Item" - Delete item. Must select item first.
+"Delete Item" -- Delete item. Must select item first.
 
-"Load List" - Load list of items that was saved previously.
+"Load List" -- Load list of items that was saved previously.
 
-"Save List" - Save current list of items. The list will be saved locally via JSON serialization.
+"Save List" -- Save current list of items. The list will be saved locally via JSON serialization.
 
-"Showing All Items / Showing Incomplete Items" - Toggle to show all items or items that have not been checked off as complete.
+"Showing All Items / Showing Incomplete Items" -- Toggle to show all items or items that have not been checked off as complete.
 
-"Sorting By Date/Time / Sorting By Priority" - Toggle to sort items by date/time or by priority.
+"Sorting By Date/Time / Sorting By Priority" -- Toggle to sort items by date/time or by priority.
 
 You can check off items as "Complete" on the left of each item.
 _____
