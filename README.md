@@ -8,7 +8,7 @@ The app was designed around the MVVM architectural pattern. The main model is th
 
 To run the app, download all of the provided files and open ItemManager.sln in Visual Studio. Change the solution platform at the top from ARM to x64, and press the green play button next to "Local Machine".
 
-There are 8 buttons and a search bar.
+There are 8 buttons (and a search bar):
 
 "Add Task" -- Add a task with name, description, deadline, and priority level.
 
@@ -27,6 +27,8 @@ There are 8 buttons and a search bar.
 "Sorting By Date/Time / Sorting By Priority" -- Toggle to sort items by date/time or by priority.
 
 You can check off items as "Complete" on the left of each item.
+
+Here is a short video demonstrating the Item Manager app: https://youtu.be/IGOep0z2wqo
 _____
 
 PROJECT 2 - Elevator Scheduler
