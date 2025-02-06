@@ -87,4 +87,4 @@ _____
 
 PROJECT 4 - Chess Game
 
-This is a chess game written in Java. Simply download the executable chess.jar to run it. The game is made for 2 players on one computer. It includes all standard functions of chess, such as castling, en passant, and pawn promotion. The code is written in Board.java and Chess.java (you do not need to download these files to run chess.jar).
+This is a chess game written in Java. You can download the executable chess.jar to run it. The game is made for 2 players on one computer. It includes all standard chess moves, such as castling, en passant, and pawn promotion.
